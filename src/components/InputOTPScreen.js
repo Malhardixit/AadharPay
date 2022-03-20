@@ -17,6 +17,7 @@ export function InputOTPScreen({navigation}) {
   const [internalVal, setInternalVal] = useState('');
   const [countDown, setCountDown] = useState(defaultCountdown);
   const [enableResend, setEnableResend] = useState(false);
+  const [otp, setOtp] = useState('');
 
   useEffect(() => {
     clockCall = setInterval(() => {
@@ -99,6 +100,7 @@ export function InputOTPScreen({navigation}) {
             maxlength={lengthInput}
             returnKeyType="done"
             keyboardType="numeric"
+            data={otp}
           />
           <View style={styles.containerInput}>
             {Array(lengthInput)

@@ -45,46 +45,43 @@ const HomeScreen = ({navigation}) => {
       }}>
       <SlideShow data={dummyData} />
       <HomeIcon navigation={navigation} />
-      <View style={styles.textProp}>
-        <Text
+
+      {/* <Text
+        style={{
+          textAlign: 'center',
+          position: 'absolute',
+          width: 94,
+          // height: 42
+          top: 20,
+          color: 'white',
+          fontFamily: 'Poppins',
+          fontSize: 14,
+        }}>
+        Book Appointment
+      </Text>
+      <Text
+        style={{
+          position: 'relative',
+          textAlign: 'center',
+          width: width / 5,
+          height: height,
+          //left: 120,
+          top: 20,
+          color: 'white',
+          fontFamily: 'Poppins',
+          fontSize: 14,
+        }}>
+        Make Payment
+      </Text> */}
+      {/* <Text
           style={{
-            justifyContent: 'center',
-            alignItems: 'center',
+            // alignItems: 'center',
+            // justifyContent: 'center',
             textAlign: 'center',
-            width: 94,
-            height: 42,
-            left: 5,
-            top: 5,
-            color: 'white',
-            fontFamily: 'Poppins',
-            fontSize: 14,
-          }}>
-          Book Appointment
-        </Text>
-        <Text
-          style={{
-            justifyContent: 'center',
-            alignItems: 'center',
-            textAlign: 'center',
-            width: 94,
-            height: 42,
-            left: 10,
-            top: 5,
-            color: 'white',
-            fontFamily: 'Poppins',
-            fontSize: 14,
-          }}>
-          Make Payment
-        </Text>
-        <Text
-          style={{
-            alignItems: 'center',
-            justifyContent: 'center',
-            textAlign: 'center',
-            width: 94,
-            height: 42,
-            left: 20,
-            top: 5,
+            // width: 94,
+            // height: 42,
+            // left: 20,
+            // top: 5,
             color: 'white',
             fontFamily: 'Poppins',
             fontSize: 14,
@@ -93,20 +90,18 @@ const HomeScreen = ({navigation}) => {
         </Text>
         <Text
           style={{
-            alignItems: 'center',
-            justifyContent: 'center',
             textAlign: 'center',
-            width: 94,
-            height: 42,
-            left: 35,
+            // width: 94,
+            // height: 42,
+            // left: 35,
             top: 5,
             color: 'white',
             fontFamily: 'Poppins',
             fontSize: 14,
           }}>
           Transaction History
-        </Text>
-      </View>
+        </Text> */}
+
       <Profile data={dummyDataName} />
     </View>
   );
@@ -116,6 +111,8 @@ const styles = StyleSheet.create({
   textProp: {
     flex: 1,
     flexDirection: 'row',
+    // justifyContent: 'center',
+    // alignItems: 'center',
   },
 });
 

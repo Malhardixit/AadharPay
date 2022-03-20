@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import {Button, TouchableRipple} from 'react-native-paper';
 
-// import MaterialCommunityIcons from ' react-native-vector-icons';
+// import MaterialCommunityIcons from 'react-native-vector-icons';
 import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -27,6 +27,17 @@ const HomeIcon = ({navigation}) => {
             labelStyle={{fontSize: 50, marginLeft: 5}}
             color="white"
             style={styles.icon}></Button>
+
+          <Text style={styles.text}>Book Appointment</Text>
+          <Text
+            style={[
+              styles.text,
+              {left: 110, height: height, width: width / 5},
+            ]}>
+            Make Payment
+          </Text>
+          <Text style={[styles.text, {left: 215}]}>Upcoming Appointment</Text>
+          <Text style={[styles.text, {left: 315}]}>Transaction History</Text>
 
           <Button
             onPress={() => {
@@ -85,6 +96,16 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingRight: 10,
     paddingLeft: 5,
+  },
+  text: {
+    textAlign: 'center',
+    position: 'absolute',
+    width: 94,
+    // height: 42,
+    top: 135,
+    color: 'white',
+    fontFamily: 'Poppins',
+    fontSize: 14,
   },
 });
 export default HomeIcon;

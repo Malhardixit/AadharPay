@@ -16,14 +16,16 @@ const OverchargingCard = props => {
   const navigation = useNavigation();
 
   const URL =
-    'http://4896-14-139-187-71.ngrok.io/protection?uid=123412341234&OperatorID=Operator_1';
+    'http://cb27-2401-4900-2348-108a-5a6-18c6-93d1-c0d5.ngrok.io/protection?uid=123412341234&OperatorID=Operator_1';
 
   const report = () => {
     fetch(URL)
       .then(res => res.json())
       .then(res => {
         alert(res.Message);
-        navigation.navigate('Home');
+      })
+      .catch(err => {
+        console.log(err);
       });
   };
   return (
